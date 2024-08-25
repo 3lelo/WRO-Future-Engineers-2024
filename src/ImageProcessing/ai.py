@@ -5,7 +5,7 @@ import numpy as np
 # import serial
 
 # فتح اتصال Serial (تأكد من تحديد المنفذ الصحيح)
-# ser = serial.Serial("COM3", 9600)  # استبدل 'COM3' بالمنفذ المناسب لديك
+ser = serial.Serial("COM3", 9600)  # استبدل 'COM3' بالمنفذ المناسب لديك
 
 # فتح الكاميرا
 cap = cv2.VideoCapture(1)
