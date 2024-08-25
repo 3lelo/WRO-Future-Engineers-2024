@@ -12,8 +12,8 @@ const byte trig_fl = 8;
 const byte echo_fr = 12;
 const byte trig_fr = 13;
 
-const byte echo_b = 3;
-const byte trig_b = 2;
+//const byte echo_b = 3;
+//const byte trig_b = 2;
 
 const byte motor_f = 52;
 const byte motor_b = 53;
@@ -123,8 +123,8 @@ void setup() {
   pinMode(echo_fl, INPUT);
   pinMode(trig_fr, OUTPUT);
   pinMode(echo_fr, INPUT);
-  pinMode(trig_b, OUTPUT);
-  pinMode(echo_b, INPUT);
+  //pinMode(trig_b, OUTPUT);
+  //pinMode(echo_b, INPUT);
   Serial.begin(9600);
   counter_rotate = 0;
 }
