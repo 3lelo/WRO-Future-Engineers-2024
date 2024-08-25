@@ -1,4 +1,3 @@
 Schematic diagrams
 ====
-
-This directory must contain one or several schematic diagrams in form of JPEG, PNG or PDF of the electromechanical components illustrating all the elements (electronic components and motors) used in the vehicle and how they connect to each other.
+![robot components](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/cf044a31-d02e-4ec0-8634-870cd3d9da88)
