@@ -1,11 +1,14 @@
 ## Right
-![Right](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/cf044a31-d02e-4ec0-8634-870cd3d9da88)
+![right](https://github.com/user-attachments/assets/10b1014b-0256-4bb9-bf7a-3e74556b31a6)
+
 ## Left
-![Left](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/cf044a31-d02e-4ec0-8634-870cd3d9da88)
+![left](https://github.com/user-attachments/assets/46b5d1d6-cbea-411a-bae8-6b60ed9babe7)
+
 ## Front
-![Front](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/cf044a31-d02e-4ec0-8634-870cd3d9da88)
+![front](https://github.com/user-attachments/assets/b98bb4b6-7716-4f71-9458-e2fd3482a1d2)
+
 ## Back
-![Back]([[https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/cf044a31-d02e-4ec0-8634-870cd3d9da88](https://github.com/3lelo/WRO---2024/blob/main/v-photos/v-photos/back.jpeg)](https://raw.githubusercontent.com/3lelo/WRO---2024/main/v-photos/v-photos/back.jpeg?token=GHSAT0AAAAAACRTGZP3P6TSIVYPDY3WUUEGZWLWOKQ))
+![back](https://github.com/user-attachments/assets/968ad47e-ed99-40eb-a248-0b0fd352dbe4)
 
 ## Bottom
 
