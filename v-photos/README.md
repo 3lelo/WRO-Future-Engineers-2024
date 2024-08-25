@@ -1,11 +1,11 @@
-## Right Side
+## Right
 
-## Left Side
+## Left
 
-## Front Side
+## Front
 
-## Back Side
+## Back
 
-## Bottom Side
+## Bottom
 
-## Top Side
+## Top
