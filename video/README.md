@@ -1,1 +1,1 @@
-## Open challenge vedio
+## Open challenge video
