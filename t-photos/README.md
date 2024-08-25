@@ -1,3 +1,2 @@
-Team Fuuny Picture
-====
+## Team Fuuny Picture
 
