@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
-
-# Import serial
+import serial
 
 # Open Serial connection (make sure to specify the correct port)
 ser = serial.Serial("COM3", 9600)  # Replace 'COM3' with the appropriate port for you
@@ -60,7 +59,7 @@ while True:
                 (0, 255, 0),
                 2,
             )
-            # ser.write(b"green\n")  # Send the text over serial
+            ser.write(b"green\n")  # Send the text over serial
             found = True
 
     # Draw a red rectangle around each red area containing at least 1000 pixels and write "red"
@@ -77,7 +76,7 @@ while True:
                 (0, 0, 255),
                 2,
             )
-            # ser.write(b"red\n")  # Send the text over serial
+            ser.write(b"red\n")  # Send the text over serial
             found = True
 
     # If no green or red area is found, display the text "nothing"
@@ -85,7 +84,7 @@ while True:
         cv2.putText(
             frame, "nothing", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 2, (255, 255, 255), 2
         )
-        # ser.write(b"noth\n")  # Send the text over serial
+        ser.write(b"noth\n")  # Send the text over serial
 
     # Display the frame
     cv2.imshow("Detected Green and Red Areas", frame)
