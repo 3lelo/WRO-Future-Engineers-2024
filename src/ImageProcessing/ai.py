@@ -45,9 +45,9 @@ while True:
     # Variable to track if any green or red area is found
     found = False
 
-    # Draw a green rectangle around each green area containing at least 1000 pixels and write "green"
+    # Draw a green rectangle around each green area containing at least 30000 pixels and write "green"
     for contour in green_contours:
-        if cv2.contourArea(contour) >= 15000:
+        if cv2.contourArea(contour) >= 30000:
             x, y, w, h = cv2.boundingRect(contour)
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
             cv2.putText(
@@ -62,9 +62,9 @@ while True:
             ser.write(b"green\n")  # Send the text over serial
             found = True
 
-    # Draw a red rectangle around each red area containing at least 1000 pixels and write "red"
+    # Draw a red rectangle around each red area containing at least 30000 pixels and write "red"
     for contour in red_contours:
-        if cv2.contourArea(contour) >= 15000:
+        if cv2.contourArea(contour) >= 30000:
             x, y, w, h = cv2.boundingRect(contour)
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
             cv2.putText(
