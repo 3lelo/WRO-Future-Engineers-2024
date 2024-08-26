@@ -1,5 +1,5 @@
-We used some UltraSonics, but they burned during the experiments ):, 
-And the IRs the same thing, We tried using an algorithm based on the color sensor but it measures incorrectly.
+**We used some UltraSonics, but they burned during the experiments ):, 
+And the IRs the same thing, We tried using an algorithm based on the color sensor but it measures incorrectly.**
 
 This's some photos showed the what I mean:
 =========================================
