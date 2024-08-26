@@ -21,7 +21,7 @@ Content
 How Ultrasonic Technology Works:
 ================================
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/80cf5cc4-f9f4-434a-9a47-1e1f9ba73147" width="500">
+  <img src="https://github.com/user-attachments/assets/80cf5cc4-f9f4-434a-9a47-1e1f9ba73147" width="1000">
 </p>
 
 **Generation of Ultrasonic Waves**:
@@ -59,7 +59,7 @@ And we used the Ultrasonic for calculate the distance on the right, left, back, 
 Components of an H-Bridge:
 ==========================
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/870caeb7-2a74-4cb3-80d8-a1801003e1ed" width="500">
+  <img src="https://github.com/user-attachments/assets/870caeb7-2a74-4cb3-80d8-a1801003e1ed" width="1000">
 </p>
 
 1. Switches (Transistors or MOSFETs): These act as the electronic switches that control the flow of current through the motor.
