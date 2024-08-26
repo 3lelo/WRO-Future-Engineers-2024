@@ -43,7 +43,7 @@ The time it takes for the echo to return is measured.
 The time delay between the emission of the ultrasonic pulse and the reception of the echo is used 
 to calculate the distance to the object.
 This is based on the known speed of sound in the medium and is calculated using the formula:
-. Distance = (Speed of Sound × Time Delay) / 2
+- Distance = (Speed of Sound × Time Delay) / 2
 The division by 2 accounts for the round trip of the wave—going to the object and coming back.
 
-. And we used the Ultrasonic for calculate the distance on the right, left, back, and front sides. also to make sure if the car will be crash from the front corner sides.
+- And we used the Ultrasonic for calculate the distance on the right, left, back, and front sides. also to make sure if the car will be crash from the front corner sides.
