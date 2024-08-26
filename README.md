@@ -61,6 +61,7 @@ Components of an H-Bridge:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/870caeb7-2a74-4cb3-80d8-a1801003e1ed" width="500">
 </p>
+
 1. Switches (Transistors or MOSFETs): These act as the electronic switches that control the flow of current through the motor.
 2. DC Motor: This is the load whose direction and speed you want to control.
 3. Power Supply: Provides the necessary voltage and current for the motor.
