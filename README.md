@@ -86,3 +86,6 @@ Components of an H-Bridge:
 
 In summary, an H-bridge circuit enables the direction and speed control of a DC motor by allowing current to flow in both directions and managing the switching of the motor's power.
 
+Energy for the robot
+====================
+The robot uses 12v adapter that has an output of 2.5A
