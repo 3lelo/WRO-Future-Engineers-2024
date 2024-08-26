@@ -46,4 +46,4 @@ This is based on the known speed of sound in the medium and is calculated using 
 - Distance = (Speed of Sound × Time Delay) / 2
 The division by 2 accounts for the round trip of the wave—going to the object and coming back.
 
-- And we used the Ultrasonic for calculate the distance on the right, left, back, and front sides. also to make sure if the car will be crash from the front corner sides.
+And we used the Ultrasonic for calculate the distance on the right, left, back, and front sides. also to make sure if the car will be crash from the front corner sides.
