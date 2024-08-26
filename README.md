@@ -1,7 +1,9 @@
 ## World Robot Olympiad (WRO)
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/4c95deb0-fc7f-4303-b52d-3bfd13346ee3" width="500">
-</p>The World Robot Olympiad (WRO) is a prestigious international robotics competition that ignites the imaginations of students worldwide. It challenges participants to showcase their creativity, problem-solving skills, and technical prowess in designing and programming robots for a variety of tasks and challenges.
+</p>
+The World Robot Olympiad (WRO) is a prestigious international robotics competition that ignites the imaginations of students worldwide. It challenges participants to showcase their creativity, problem-solving skills, and technical prowess in designing and programming robots for a variety of tasks and challenges.
 
 One of the most dynamic categories within WRO is the Future Engineers category. Here, participants are tasked with developing innovative solutions to real-world problems using robotics and automation. This category serves as a breeding ground for future innovators, encouraging students to think critically and creatively, laying the groundwork for a new generation of engineers and technologists.
 
@@ -18,6 +20,9 @@ Content
 
 How Ultrasonic Technology Works:
 ================================
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/80cf5cc4-f9f4-434a-9a47-1e1f9ba73147" width="500">
+</p>
 **Generation of Ultrasonic Waves**:
 Ultrasonic waves are generated using an ultrasonic transducer.
 This device converts electrical energy into mechanical vibrations using materials like piezoelectric crystals.
@@ -52,6 +57,9 @@ And we used the Ultrasonic for calculate the distance on the right, left, back, 
 
 Components of an H-Bridge:
 ==========================
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/870caeb7-2a74-4cb3-80d8-a1801003e1ed" width="500">
+</p>
 1. Switches (Transistors or MOSFETs): These act as the electronic switches that control the flow of current through the motor.
 2. DC Motor: This is the load whose direction and speed you want to control.
 3. Power Supply: Provides the necessary voltage and current for the motor.
