@@ -9,9 +9,9 @@ This year, the Future Engineers category presents an exciting challenge: creatin
 
 Content
 =======
-* `t-photos` contains 2 photos of the team (an official one and one funny photo with all team members)
+* `t-photos` contains 2 photos of the team (an _official_ one and one _funny_ photo with all team members)
 * `v-photos` contains 6 photos of the vehicle (from every side, from top and bottom)
-* `video` contains the video.md file with the link to a video where driving demonstration exists
-* `schemes` contains one schematic diagram in form of (JPEG, PNG or PDF) of the electronic components and motors that used in the vehicle and how they connect to each other.
+* `video` contains the `video.md` file with the link to a video where driving demonstration exists
+* `schemes` contains one schematic diagram in form of `JPEG, PNG or PDF` of the electronic components and motors that used in the vehicle and how they connect to each other.
 * `src` contains code of control software for all components which were programmed
 * `other` is for other files which can be used to understand how to prepare the vehicle for the competition. It may include documentation how to connect to a SBC/SBM and upload files there, datasets, hardware specifications, communication protocols descriptions etc.
