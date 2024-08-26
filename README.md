@@ -23,6 +23,7 @@ How Ultrasonic Technology Works:
 <p align="center">
   <img src="https://github.com/user-attachments/assets/80cf5cc4-f9f4-434a-9a47-1e1f9ba73147" width="500">
 </p>
+
 **Generation of Ultrasonic Waves**:
 Ultrasonic waves are generated using an ultrasonic transducer.
 This device converts electrical energy into mechanical vibrations using materials like piezoelectric crystals.
