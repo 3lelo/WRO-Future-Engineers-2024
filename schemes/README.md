@@ -1,3 +1,6 @@
 Electromechanical diagram
 ====
-![robot Electromechanical diagram](https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/cf044a31-d02e-4ec0-8634-870cd3d9da88)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9121bd2e-e1ac-4181-a03c-e2d594dfc9b2" width="500">
+</p>
