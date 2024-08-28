@@ -60,7 +60,7 @@ void b3d(){
 
   void alwan(){
     if (Serial.available() > 0){
-     String k=Serial.readStringUntil('\n');
+     String k=Serial.readStringUntil("\n");
      if(k == "Red Left" || k == "Red Center" || k == "Red Right"){
       c = "red";
       if(k == "Red Right"){
@@ -74,7 +74,6 @@ void b3d(){
         digitalWrite(motor_b, LOW);
         }
 
-        
         else if(k == "Red Center"){
           k=Serial.readStringUntil("\n");
           myservo.write(80);
@@ -122,7 +121,7 @@ void atjah(){
   int left = get_destance(trig_l,echo_l);
   int right = get_destance(trig_r,echo_r);
   if(left+right >= 140){
-    if(c = "red" && cr ==7){
+    if(c = "red" && cr == 7){
       if(left > right){
         if(right > 30){
         time = millis();
