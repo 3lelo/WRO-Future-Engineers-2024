@@ -59,7 +59,8 @@ void b3d(){
 
 
   void alwan(){
-     String k=Serial.readStringUntil();
+    if (Serial.available() > 0){
+     String k=Serial.readStringUntil('\n');
      if(k == "Red Left" || k == "Red Center" || k == "Red Right"){
       c = "red";
       if(k == "Red Right"){
@@ -85,6 +86,7 @@ void b3d(){
          myservo.write(55);
           }
       }
+    
 
       
      else if(k == "Green Left" || k == "Green Center" || k == "Green Right"){
@@ -113,6 +115,7 @@ void b3d(){
           }
       }
      }
+  }
 
 
 void atjah(){
