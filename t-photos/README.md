@@ -11,8 +11,8 @@
   <br>
   <strong>Al-Mootasem Billah</strong>
   <br><br>
-  <img src="https://github.com/DexterTaha/WRO-2024-FUTURE-ENGINEERS/assets/130682580/1f0185a0-6156-4467-80d9-b935ffc664ff" width="500">
+  <img src="https://github.com/user-attachments/assets/9d7f7553-9f5c-44da-904b-58111d834b18" width="500">
   <br>
-  <strong>Taha TAIDI LAAMIRI</strong>
+  <strong>Ali Adnan</strong>
 </p>
 
