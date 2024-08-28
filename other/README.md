@@ -20,22 +20,27 @@ The algorithm we used
 =====================
 ## Arduino Code (CarControl.ino):
 - Ultrasonic Distance Measurement:
+
 Uses ultrasonic sensors to measure the distance by sending a pulse and calculating the time it takes to receive the echo. This is done in the get_destance function.
 The function controls the trigger pin to send a pulse and reads the echo pin to calculate the distance.
 
 - Servo Control Logic:
+
 Controls the servo motor based on distance measurements and specific color commands received from the serial input.
 The b3d() function adjusts the servo position based on distance readings from left and right sensors to avoid obstacles.
 
 - Serial Communication:
+
 Reads color commands from the serial input using Serial.readStringUntil().
 Depending on the command (e.g., "Red Left", "Green Center"), it executes specific motor and servo actions.
 
 
 ## Python Code (ai.py):
 - Serial Communication Setup:
+
 Establishes a serial connection with an Arduino device using pyserial.
 Configures the communication port and baud rate, and includes a delay to ensure the connection is ready.
 
 - Color Detection:
+
 Detects specific colors in an image using OpenCV. Applies a Gaussian Blur to reduce noise, and then filters colors within a specified range using cv2.inRange() (partially visible in the code).
