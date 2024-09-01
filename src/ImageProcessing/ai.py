@@ -67,7 +67,7 @@ try:
             # Determine position based on 6 equal sections with inverted logic
             if red_cx < section_width:
                 red_position = "Right"
-            elif red_cx > 5 * section_width:
+            elif red_cx > 4 * section_width:
                 red_position = "Left"
             else:
                 red_position = "Center"
@@ -92,7 +92,7 @@ try:
             # Determine position based on 6 equal sections with inverted logic
             if green_cx < section_width:
                 green_position = "Right"
-            elif green_cx > 5 * section_width:
+            elif green_cx > 4 * section_width:
                 green_position = "Left"
             else:
                 green_position = "Center"
