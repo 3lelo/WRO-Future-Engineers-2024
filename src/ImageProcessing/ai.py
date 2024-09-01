@@ -1,13 +1,12 @@
 import cv2
 import numpy as np
-import serial
 import time
 
 # Setting up the serial connection
-ser = serial.Serial("COM5", 9600, timeout=1.0)  # Replace "COM5" with the appropriate port
-time.sleep(3)  # Delay to allow the connection to open
-ser.reset_input_buffer()  # Reset the input buffer
-print("Serial OK")  # Confirm serial connection is established
+# ser = serial.Serial("COM5", 9600, timeout=1.0)  # Replace "COM5" with the appropriate port
+# time.sleep(3)  # Delay to allow the connection to open
+# ser.reset_input_buffer()  # Reset the input buffer
+# print("Serial OK")  # Confirm serial connection is established
 
 # Function for color detection using Gaussian Blur and inRange technique
 def detect_color(image, lower_bound, upper_bound):
@@ -18,19 +17,17 @@ def detect_color(image, lower_bound, upper_bound):
     return mask
 
 # Setting HSV color bounds for red and green
-lower_red = np.array([0, 100, 100])
-upper_red = np.array([10, 255, 255])
+lower_red1 = np.array([0, 100, 100])
+upper_red1 = np.array([10, 255, 255])
+
+lower_red2 = np.array([170, 100, 100])
+upper_red2 = np.array([180, 255, 255])
 
 lower_green = np.array([35, 50, 50])
 upper_green = np.array([85, 255, 255])
 
 try:
-    cap = cv2.VideoCapture(1)  # Open the camera
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 3840)  # Set 4K resolution width
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 2160)  # Set 4K resolution height
-    cap.set(cv2.CAP_PROP_BRIGHTNESS, 150)
-    cap.set(cv2.CAP_PROP_CONTRAST, 50)
-    cap.set(cv2.CAP_PROP_SATURATION, 50)
+    cap = cv2.VideoCapture(2)  # Open the camera
 
     while True:
         ret, frame = cap.read()
@@ -40,15 +37,13 @@ try:
 
         frame = cv2.flip(frame, 1)  # Flip the frame horizontally
 
-        # Cropping the frame's sides
-        height, width, _ = frame.shape
-        left_margin = int(width * 0.1)
-        right_margin = int(width * 0.1)
-        frame = frame[:, left_margin : width - right_margin]
-
         hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)  # Convert the frame to HSV color space
+
         # Detect colors
-        red_mask = detect_color(hsv, lower_red, upper_red)
+        red_mask1 = detect_color(hsv, lower_red1, upper_red1)
+        red_mask2 = detect_color(hsv, lower_red2, upper_red2)
+        red_mask = cv2.bitwise_or(red_mask1, red_mask2)  # Combine both red masks
+
         green_mask = detect_color(hsv, lower_green, upper_green)
 
         # Count the number of pixels
@@ -58,6 +53,9 @@ try:
         # Variable to track if any green or red area is found
         found = False
 
+        # Define section boundaries
+        section_width = frame.shape[1] // 6  # Width of each of the 6 sections
+
         # Red color detection
         if red_pixels > 30000:
             x, y, w, h = cv2.boundingRect(red_mask)
@@ -65,10 +63,12 @@ try:
 
             M = cv2.moments(red_mask)
             red_cx = int(M["m10"] / M["m00"])
-            if red_cx < width // 6:
-                red_position = "Left"
-            elif red_cx > 2 * width // 6:
+
+            # Determine position based on 6 equal sections with inverted logic
+            if red_cx < section_width:
                 red_position = "Right"
+            elif red_cx > 5 * section_width:
+                red_position = "Left"
             else:
                 red_position = "Center"
 
@@ -79,7 +79,7 @@ try:
             found = True
 
             # Send data via serial
-            ser.write(f"\nRed {red_position}".encode())
+            # ser.write(f"\nRed {red_position}".encode())
 
         # Green color detection
         if green_pixels > 30000:
@@ -88,10 +88,12 @@ try:
 
             M = cv2.moments(green_mask)
             green_cx = int(M["m10"] / M["m00"])
-            if green_cx < width // 6:
-                green_position = "Left"
-            elif green_cx > 2 * width // 6:
+
+            # Determine position based on 6 equal sections with inverted logic
+            if green_cx < section_width:
                 green_position = "Right"
+            elif green_cx > 5 * section_width:
+                green_position = "Left"
             else:
                 green_position = "Center"
 
@@ -102,7 +104,7 @@ try:
             found = True
 
             # Send data via serial
-            ser.write(f"\nGreen {green_position}".encode())
+            # ser.write(f"\nGreen {green_position}".encode())
 
         # If no green or red area is found, display "nothing"
         if not found:
@@ -116,7 +118,7 @@ try:
                 2,
             )
             # Send data via serial
-            ser.write(b"\nNothing")
+            # ser.write(b"\nNothing")
 
         # Display the frame and handle exit condition
         cv2.imshow("Detected Green and Red Areas", frame)
@@ -129,8 +131,8 @@ try:
 
     cap.release()
     cv2.destroyAllWindows()
-    ser.close()  # Close the serial connection
+    # ser.close()  # Close the serial connection
 
 except KeyboardInterrupt:
     print("Serial communication closed")
-    ser.close()  # Close the serial connection
+    # ser.close()  # Close the serial connection 
