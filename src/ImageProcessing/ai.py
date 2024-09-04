@@ -3,10 +3,10 @@ import numpy as np
 import time
 
 # Setting up the serial connection
-# ser = serial.Serial("COM5", 9600, timeout=1.0)  # Replace "COM5" with the appropriate port
-# time.sleep(3)  # Delay to allow the connection to open
-# ser.reset_input_buffer()  # Reset the input buffer
-# print("Serial OK")  # Confirm serial connection is established
+ser = serial.Serial("COM5", 9600, timeout=1.0)  # Replace "COM5" with the appropriate port
+time.sleep(3)  # Delay to allow the connection to open
+ser.reset_input_buffer()  # Reset the input buffer
+print("Serial OK")  # Confirm serial connection is established
 
 # Function for color detection using Gaussian Blur and inRange technique
 def detect_color(image, lower_bound, upper_bound):
@@ -79,7 +79,7 @@ try:
             found = True
 
             # Send data via serial
-            # ser.write(f"\nRed {red_position}".encode())
+            ser.write(f"\nRed {red_position}".encode())
 
         # Green color detection
         if green_pixels > 30000:
@@ -104,7 +104,7 @@ try:
             found = True
 
             # Send data via serial
-            # ser.write(f"\nGreen {green_position}".encode())
+            ser.write(f"\nGreen {green_position}".encode())
 
         # If no green or red area is found, display "nothing"
         if not found:
@@ -118,7 +118,7 @@ try:
                 2,
             )
             # Send data via serial
-            # ser.write(b"\nNothing")
+            ser.write(b"\nNothing")
 
         # Display the frame and handle exit condition
         cv2.imshow("Detected Green and Red Areas", frame)
@@ -131,8 +131,8 @@ try:
 
     cap.release()
     cv2.destroyAllWindows()
-    # ser.close()  # Close the serial connection
+    ser.close()  # Close the serial connection
 
 except KeyboardInterrupt:
     print("Serial communication closed")
-    # ser.close()  # Close the serial connection 
+    ser.close()  # Close the serial connection 
