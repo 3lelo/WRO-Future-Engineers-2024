@@ -5,7 +5,7 @@ This directory contains the codes that we used to control the car and the steeri
 
 ## This's the code for the open challenge in C language
 
-```Cpp
+```C
 #include <Servo.h>
 
 // Servo object
