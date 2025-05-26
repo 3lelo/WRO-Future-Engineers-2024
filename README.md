@@ -1,8 +1,6 @@
 ## World Robot Olympiad (WRO)
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/4c95deb0-fc7f-4303-b52d-3bfd13346ee3" width="500">
-</p>
+<img src="https://github.com/user-attachments/assets/4c95deb0-fc7f-4303-b52d-3bfd13346ee3" width="500">
 The World Robot Olympiad (WRO) is a prestigious international robotics competition that ignites the imaginations of students worldwide. It challenges participants to showcase their creativity, problem-solving skills, and technical prowess in designing and programming robots for a variety of tasks and challenges.
 
 One of the most dynamic categories within WRO is the Future Engineers category. Here, participants are tasked with developing innovative solutions to real-world problems using robotics and automation. This category serves as a breeding ground for future innovators, encouraging students to think critically and creatively, laying the groundwork for a new generation of engineers and technologists.
